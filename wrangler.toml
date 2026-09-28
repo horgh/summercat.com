@@ -1,0 +1,10 @@
+name = "summercat-www"
+compatibility_date = "2026-09-28"
+
+[assets]
+directory = "./build"
+# Serve files at their exact paths. The default mode redirects /index.html
+# to /. With "none", / does not map to index.html, so _redirects rewrites
+# it.
+html_handling = "none"
+not_found_handling = "404-page"

@@ -9,7 +9,7 @@ clean:
 
 site:
 	mkdir $(BUILD_DIR)
-	cp -a 404.html favicon.ico index.html robots.txt summercat2.png summercat.png $(BUILD_DIR)
+	cp -a _redirects 404.html favicon.ico index.html robots.txt summercat2.png summercat.png $(BUILD_DIR)
 
 deploy: site
-	mise exec -- pnpm exec wrangler pages deploy ./build --project-name=summercat-www
+	mise exec -- pnpm exec wrangler deploy
